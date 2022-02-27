@@ -5,7 +5,7 @@
 ########################################################
 
 # ZIP name
-zip_file_name="admin-bar-tools"
+zip_file_name=""
 
 # Output path
 output_path="./"
@@ -28,7 +28,9 @@ quiet_flag=true
 # Exclude files
 # format -> "file or directory name"
 excludes=(
+	".cache"
 	".git"
+	".github"
 	".gitignore"
 	".vscode"
 	".DS_Store"
@@ -44,7 +46,13 @@ excludes=(
 	".phpcs.xml.dist"
 	"phpcs.xml.dist"
 	"ruleset.xml"
+	"phpstan.neon"
+	"phpstan.neon.dist"
+	"phpunit.xml"
+	"phpunit.xml.dist"
+	"tests"
 	# npm
+	"./npm"
 	"node_modules"
 	"package.json"
 	"package-lock.json"
