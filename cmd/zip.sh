@@ -5,7 +5,7 @@
 ########################################################
 
 # ZIP name
-zip_file_name="admin-bar-tools"
+zip_file_name=""
 
 # Output path
 output_path="./"
