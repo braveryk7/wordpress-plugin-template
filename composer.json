@@ -12,7 +12,6 @@
     "scripts": {
         "post-autoload-dump": [
             "@ghinit",
-            "mkdir -p cmd",
             "@gh-script-init"
         ],
         "post-update-cmd": [
