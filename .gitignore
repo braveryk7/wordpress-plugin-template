@@ -7,10 +7,6 @@ Thumbs.db
 .DS_Store
 
 #-------------------------------
-#   Created by Editor
-#-------------------------------
-
-#-------------------------------
 #   Created by Composer
 #-------------------------------
 vendor/
@@ -30,3 +26,22 @@ build/
 #-------------------------------
 .eslintcache
 .stylelintcache
+
+#-------------------------------
+#   Created by Linter
+#-------------------------------
+.eslintcache
+.stylelintcache
+
+#-------------------------------
+#   Created by Tester
+#-------------------------------
+.cache/
+.phpunit.result.cache
+tests/logs/
+
+#-------------------------------
+#   etc
+#-------------------------------
+*.zip
+languages/js/*.mo
