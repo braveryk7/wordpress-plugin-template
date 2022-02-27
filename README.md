@@ -106,6 +106,17 @@ body="
 "make-json": "./vendor/bin/wp i18n make-json languages/js --no-purge"
 ```
 
+#### .github/workflows/deploy-wordpress-svn.yml
+```diff
+ - name: Set outputs
+ run: |
+	 TAG=`echo ${GITHUB_REF##*/} | sed -e "s/v//"`
+	 echo ::set-output name=VERSION::$TAG
+-	 echo ::set-output name=PROJECT_NAME::
++	 echo ::set-output name=PROJECT_NAME::my-plugin
+ id: svn-env
+```
+
 #### .github/workflows/create-rsync-cmd.sh
 ```diff
 # SVN NAME
