@@ -61,4 +61,4 @@ jobs:
       - name: SVN commit
         run: |
           cd ${{ steps.svn-env.outputs.PROJECT_NAME }}
-          svn ci -m "version ${{ steps.svn-env.outputs.TAG }} release" --username ${{ secrets.SVN_USERNAME }} --password ${{ secrets.SVN_PASSWORD }} --non-interactive --no-auth-cache
+          svn ci -m "version ${{ steps.svn-env.outputs.TAG }} release" --username "${{ secrets.SVN_USERNAME }}" --password "${{ secrets.SVN_PASSWORD }}" --non-interactive --no-auth-cache
